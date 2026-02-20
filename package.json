@@ -1,0 +1,24 @@
+{
+  "name": "av1_henrique",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhenifer384/av1_henrique.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhenifer384/av1_henrique/issues"
+  },
+  "homepage": "https://github.com/jhenifer384/av1_henrique#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
+
