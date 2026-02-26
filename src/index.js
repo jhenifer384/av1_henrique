@@ -1,17 +1,17 @@
 
 import {
-  listarTarefas,
-  criarTarefa,
-  atualizarTarefa,
-  excluirTarefa
+  listarVolei,
+  criarVolei,
+  atualizarVolei,
+  excluirVolei
 } from "./tarefas.js";
 
-listarTarefas();
+listarVolei();
 
 console.log("Adicionando nova tarefa");
-criarTarefa("Estudando para o enem");
+criarVolei("Estudando para o enem");
 
-atualizarTarefa(1, "", true);
-excluirTarefa(2);
+atualizarVolei(1, "", true);
+excluirVolei(2);
 
-listarTarefas();
+listarVolei();
