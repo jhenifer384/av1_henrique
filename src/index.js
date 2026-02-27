@@ -4,7 +4,7 @@ import {
   criarVolei,
   atualizarVolei,
   excluirVolei
-} from "./tarefas.js";
+} from "./volei.js";
 
 listarVolei();
 

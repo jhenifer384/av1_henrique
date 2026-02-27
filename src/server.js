@@ -29,21 +29,21 @@ app.post("/tarefas", (req, res) => {
   const nova = criarVolei(titulo.trim());
   res.status(201).json(nova);
 });
-import { listarVolei, criarVolei } from "./tarefas.js";
+import { listarVolei, criarVolei } from "./volei.js";
 
 // rota de saudação simples
 app.get("/", (req, res) => {
   res.send("Olá mundo!");
 });
 
-// GET /tarefas - lista todas as tarefas em memória
-app.get("/tarefas", (req, res) => {
+// GET /Volei - lista todas as tarefas em memória
+app.get("/Volei", (req, res) => {
   const lista = listarVolei();
   res.status(200).json(lista);
 });
 
-// POST /tarefas - cria uma nova tarefa com validação mínima
-app.post("/tarefas", (req, res) => {
+// POST /Volei - cria uma nova tarefa com validação mínima
+app.post("/Volei", (req, res) => {
   const { titulo } = req.body;
   if (!titulo || titulo.trim() === "") {
     return res.status(400).json({ erro: "Título é obrigatório." });
