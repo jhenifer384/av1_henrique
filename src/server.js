@@ -36,14 +36,14 @@ app.get("/", (req, res) => {
   res.send("Olá mundo!");
 });
 
-// GET /Volei - lista todas as tarefas em memória
-app.get("/Volei", (req, res) => {
+// GET /volei - lista todas as tarefas em memória
+app.get("/volei", (req, res) => {
   const lista = listarVolei();
   res.status(200).json(lista);
 });
 
-// POST /Volei - cria uma nova tarefa com validação mínima
-app.post("/Volei", (req, res) => {
+// POST /volei - cria uma nova tarefa com validação mínima
+app.post("/volei", (req, res) => {
   const { titulo } = req.body;
   if (!titulo || titulo.trim() === "") {
     return res.status(400).json({ erro: "Título é obrigatório." });
